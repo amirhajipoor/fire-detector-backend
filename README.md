@@ -1,4 +1,4 @@
-# 🔥 fire-detection
+# 🔥 fire-detector
 
 A real-time fire and gas leak detection system using the MQ-2 sensor and Wemos D1 Mini. This project detects dangerous gas levels and potential fire hazards, sends the data to a Laravel backend, and triggers SMS alerts to notify users immediately.
 
@@ -12,7 +12,7 @@ A real-time fire and gas leak detection system using the MQ-2 sensor and Wemos D
 
 ## 🌐 Backend Requirements
 
-- PHP 8.x / Laravel 11
+- PHP 8.3 / Laravel 11
 - MySQL or compatible database
 - SMS gateway integration (e.g., Twilio, Nexmo)
 - API route to receive sensor data

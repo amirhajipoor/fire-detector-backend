@@ -1,7 +1,6 @@
 {
     "app": "fire-detector",
-    "build": {
-        "location": "iran"
-    },
-    "disks": []
+    "laravel": {
+        "phpVersion": "8.3"
+    }
 }
