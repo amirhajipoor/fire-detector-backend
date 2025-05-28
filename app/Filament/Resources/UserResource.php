@@ -32,15 +32,6 @@ class UserResource extends Resource
                 Forms\Components\TextInput::make('password')
                     ->label(__('filament.resources.users.fields.password'))
                     ->password(),
-                Forms\Components\TextInput::make('tokens')
-                    ->label(__('filament.resources.users.fields.token'))
-                    ->formatStateUsing(fn ($record) => optional(
-                        $record->tokens()->latest('created_at')->first()
-                    )->token)
-                    ->columnSpanFull()
-                    ->readOnly()
-                    ->dehydrated(false)
-                    ->visibleOn(['view', 'edit']),
             ]);
     }
 
@@ -57,12 +48,6 @@ class UserResource extends Resource
                 Tables\Columns\TextColumn::make('mobile')
                     ->label(__('filament.resources.users.fields.mobile'))
                     ->searchable(),
-                Tables\Columns\TextColumn::make('tokens')
-                    ->label(__('filament.resources.users.fields.token'))
-                    ->formatStateUsing(fn ($record) => optional(
-                        $record->tokens()->latest('created_at')->first()
-                    )->token)
-                    ->badge(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->label(__('filament.resources.users.fields.created_at'))
                     ->jalaliDateTime('l j F Y - H:i')

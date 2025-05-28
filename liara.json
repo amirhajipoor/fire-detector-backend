@@ -1,6 +1,8 @@
 {
     "app": "fire-detector",
     "laravel": {
-        "phpVersion": "8.3"
+        "phpVersion": "8.3",
+        "configCache": true,
+        "routeCache": true
     }
 }

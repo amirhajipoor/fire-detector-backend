@@ -38,6 +38,8 @@ class ReportService
                 'comment' => 'اندازه‌گیری شده با ماژول MQ-2',
             ]);
 
+            logger($report);
+
             $user->notify(new FireAlarm($report));
 
             DB::commit();

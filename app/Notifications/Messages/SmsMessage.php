@@ -21,7 +21,7 @@ class SmsMessage extends Notification
 
     protected string $level;
 
-    public function __construct(array $lines = [])
+    public function __construct()
     {
         $this->baseUrl = config('services.farazsms.endpoint');
         $this->sender = config('services.farazsms.sender');

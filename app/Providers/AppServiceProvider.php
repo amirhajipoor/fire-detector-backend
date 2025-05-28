@@ -21,7 +21,7 @@ class AppServiceProvider extends ServiceProvider
         $this->configureDates();
         $this->configLivewire();
         $this->configResources();
-        $this->configSecurity();
+        // $this->configSecurity();
     }
 
     /**
